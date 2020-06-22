@@ -1,0 +1,51 @@
+.event-log {
+  height: 40vh;
+  width: 60vw;
+  padding: 50px;
+  color: #fff;
+  background-color: #3d5a77;
+  border-radius: 50px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.event-log__list {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #ecf0f1;
+  overflow-y: auto;
+}
+
+.event-log__item {
+  position: relative;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  list-style: none;
+  line-height: 2rem;
+  color: inherit;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+  }
+
+  .date {
+    margin-right: 0.5rem;
+    color: #bdc3c7;
+    font-weight: 500;
+  }
+
+  .event {
+    color: inherit;
+  }
+}
