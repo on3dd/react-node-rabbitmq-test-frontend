@@ -14,10 +14,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "socket.io-client": "^2.3.0",
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "cross-env PORT=8080 react-scripts start",
+    "start": "cross-env PORT=8080 BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -38,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@types/socket.io-client": "^1.4.33",
     "cross-env": "^7.0.2"
   }
 }

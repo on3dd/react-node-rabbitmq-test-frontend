@@ -3,7 +3,7 @@
   width: 60vw;
   padding: 50px;
   color: #fff;
-  background-color: #3d5a77;
+  background-color: #2b4157;
   border-radius: 50px;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
 }
@@ -39,9 +39,23 @@
     border-radius: 1px;
   }
 
+  &.priority-1 {
+    &:before {
+      background-color: #f39c12;
+    }
+  }
+
+  &.priority-2 {
+    &:before {
+      background-color: #c0392b;
+    }
+  }
+
   .date {
-    margin-right: 0.5rem;
-    color: #bdc3c7;
+    display: inline-block;
+    width: 140px;
+    // margin-right: 0.5rem;
+    color: #95a5a6;
     font-weight: 500;
   }
 
